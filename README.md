@@ -5,8 +5,8 @@ I.                 Context
 In the actual context of the Covid-19 pandemics, the good news just came. Some pharmaceutical companies just announced that they found an efficient vaccine to fight against the SARS-Cov-2 virus. But they know they have to deliver the vaccine to all countries around the world and they need our help to serve all the requests.
 The pharmaceutical company owns multiple production facilities. Each facility has production robots creating vaccine doses and packing robots that pack the doses. They need our help to create a proper plan by using Java Concurrency to distribute all the ordered doses in time to end the Covid-19 crisis.  
 
-II.               Pharmaceutical Company Instructions:
-1.There are multiple production facilities:  
+II.               Pharmaceutical Company Instructions:  
+1.There are multiple production facilities:    
 A random number of factories (between 2 and 5) that create vaccine doses (it doesn’t know how many are needed until the production plan is created and runs)  
 The production facilities are designed as matrices with N x N where 100 ≤ N ≤ 500.  
 Each production facility has a list of production robots  
