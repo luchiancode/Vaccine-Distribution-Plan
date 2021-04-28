@@ -6,13 +6,13 @@ In the actual context of the Covid-19 pandemics, the good news just came. Some p
 The pharmaceutical company owns multiple production facilities. Each facility has production robots creating vaccine doses and packing robots that pack the doses. They need our help to create a proper plan by using Java Concurrency to distribute all the ordered doses in time to end the Covid-19 crisis.
 
 II.               Pharmaceutical Company Instructions:
-1.      There are multiple production facilities:
+1.There are multiple production facilities:
 A random number of factories (between 2 and 5) that create vaccine doses (it doesn’t know how many are needed until the production plan is created and runs)
 The production facilities are designed as matrices with N x N where 100 ≤ N ≤ 500.
 Each production facility has a list of production robots
 Every few seconds the production facility will request the position of the production robot in the factory
 There can be no more than N / 2 production robots in each production facility.
-2.      There are the production robots that create the vaccine doses
+2.There are the production robots that create the vaccine doses
 The production robots are spawning randomly in each production facility at a random place in the factory at a random time σ where 500 ≤ σ ≤ 1000 (milliseconds)
 Two production robots cannot be in the same place
  The production robots create doses by:
@@ -23,7 +23,7 @@ If a production robot is surrounded by other production robots and cannot move i
 Each time a dose is created, the production robot informs the production facility to know the created dose serial number.
 After each dose created, the production robot needs to recharge for a short while (X * 30 milliseconds)
 The production robots will work until all the orders are done.
-3.      There are also packing robots:
+3.There are also packing robots:
 The packing robots await to receive doses from the production facilities. They are available in the pharmaceutical company’s headquarter.
 They can always read information from the production facility regarding the number of doses, but they won’t be allowed access when the production robots notify the production facilities about newly created doses or when the production facility itself asks the production robots about new vaccine doses.
 A maximum of 10 packing robots can read from the production facility at a time
